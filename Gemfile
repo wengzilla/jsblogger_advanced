@@ -4,6 +4,8 @@ source 'http://rubygems.org'
 gem 'rails', :git => 'https://github.com/rails/rails.git', :branch => "3-2-stable"
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'puma'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails'
@@ -21,4 +23,7 @@ group :development, :test do
   #gem 'rb-fsevent'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'capistrano_colors'
 end
